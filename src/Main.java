@@ -38,7 +38,7 @@ public class Main {
 
         // starter point
         int x = n - 1;
-        int y = n;
+        int y = n - 1;
         int stepLen = 2; // step length at start
 
         while (counter <= 2 * n + 1) {
