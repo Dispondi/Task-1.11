@@ -41,7 +41,7 @@ public class Main {
         int y = n;
         int stepLen = 2; // step length at start
 
-        while (counter <= n) {
+        while (counter <= 2 * n + 1) {
             for (int cycle = 0; cycle < 2; cycle++) {
                 for (int step = 0; step <= stepLen; step++) {
                     // walk
