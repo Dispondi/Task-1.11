@@ -13,20 +13,19 @@ public class Main {
         int y = n - 1;
         int stepLen = 2; // step length at start
 
-        while (counter <= (((2 * n) + 1) * ((2 * n) + 1)) - 1) {
+        while (true) {
             for (int cycle = 0; cycle < 2; cycle++) {
                 for (int step = 0; step < stepLen; step++) {
                     // walk
                     x += dirctns[direction][0];
                     y += dirctns[direction][1];
 
-                    if (x < 0 || y < 0) {
+                    if (x < 0 || y < 0) { // at the end of the spiral x or y will be negative
                         return;
                     }
 
                     matrix[y][x] = ++counter;
                 }
-
                 direction = switchDirection(direction);
             }
             stepLen++;
@@ -63,7 +62,7 @@ public class Main {
         matrix[n-1][n] = 1;
         matrix[n-1][n-1] = 2;
 
-        fillMatrix(n, matrix);
+        fillMatrix(n, matrix); // filling
         printMatrix(matrix); // printing
 
     }
