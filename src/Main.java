@@ -29,7 +29,7 @@ public class Main {
         int counter = 2;
 
         // directions
-        int[][] dirctns = new int[][] {{0,-1}, {1,0}, {0,1}, {-1,0}}; // {x,y}
+        int[][] dirctns = new int[][] {{0,1}, {1,0}, {0,-1}, {-1,0}}; // {x,y}
         int direction = 0;
 
         // in order to make calculations easier
