@@ -12,6 +12,15 @@ public class Main {
         return directionNow;
     }
 
+    public static void printMatrix(int[][] matrix) {
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                System.out.printf("%3d", anInt);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -45,5 +54,8 @@ public class Main {
                 stepLen++;
             }
         }
+
+        printMatrix(matrix); // printing
+
     }
 }
